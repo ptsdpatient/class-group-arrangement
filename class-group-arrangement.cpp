@@ -3,18 +3,19 @@
 using namespace std;
 const int x = 11;
 const int y = 7;
-int n=1;
+int n=70;
 int a[x],b[x],c[x],d[x],e[x],f[x],g[x];
 
-void allotStudents2() {
-	for (int i = 0; i < 70; i++) {
-
-	}
-}
-void allotStudents3(int m[11]) {
-
+int randomGen(int mod) {
+	return rand()%mod;
 }
 void allotStudents() {
+	
+	for(int i = 0; i < 10; i++) {
+	
+	}
+}
+/* void allotStudents() {
 	for (int i = 0; i < 9; i++) {
 		switch (rand() % 8) {
 		case 1:a[i] = n;
@@ -38,10 +39,10 @@ void allotStudents() {
 		}
 		n++;
 	}
-}
+} */
 int main() {
 	allotStudents();
-	for (int i = 0; i < 9; i++) {
+	for (int i = 0; i < 10; i++) {
 		cout<<endl << a[i]<<" "<< b[i] <<" " << c[i] <<" " << d[i] <<" " << e[i] <<" " << f[i] <<" " << g[i];
 	    
 	}
