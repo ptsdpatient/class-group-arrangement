@@ -27,7 +27,7 @@ void assigngroup() {
 	srand(time(NULL));
 	int x, y;
 	while (value > 0) {
-		do { x = genrand(7); y = genrand(10); /*std::cout << x << ", " << y << "\n";*/ } while (!(list[x][y] == 0));
+		do { x = genrand(7); y = genrand(10); } while (!(list[x][y] == 0));
 		
 		list[x][y] = value;
 		std::cout << x << "," << y << "\t" << list[x][y] << "\n";
